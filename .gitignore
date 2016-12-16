@@ -1,0 +1,7 @@
+# This will be ignored in this folder
+.classpath
+.project
+.settings/
+.tern-project
+target/
+.svn/

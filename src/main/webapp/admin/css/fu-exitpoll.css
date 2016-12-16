@@ -1,0 +1,82 @@
+/*!
+ * Ldc, 2016
+ */
+
+/* Global Styles */
+
+body {
+	background-color: #fff;
+}
+
+span#lu-logo {
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: -5px;
+	background-color: white;
+	padding:5px;
+}
+
+.navbar {
+	min-height: 70px;
+}
+
+/*
+.navbar-inverse {
+    background-image: linear-gradient(to bottom, #cb7f1a 0%, #9c6114 100%);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+}
+*/
+
+.font-medium {
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.navbar-brand {
+	height: 70px;
+	padding: 10px;
+	padding-left: 15px;
+	font-size: 22px;
+}
+
+.top-nav > li > a {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 71px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+/* Utskickshantering */
+table#utskickTable th.time {
+	width: 50px;
+}
+
+table#utskickTable td + td {
+	width: 30px;
+}
