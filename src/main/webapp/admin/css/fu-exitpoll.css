@@ -72,20 +72,21 @@ span#lu-logo {
     }
 }
 
-table#utskickTable.table {
-	width: 100%;
-	white-space: normal;
+table#utskickTable.table th:FIRST-CHILD  {
+	width: 30%;
 }
 
-table#utskickTable.table th  {
-	width: 30px;
-	min-width: 30px;
-	white-space: normal;
+table#utskickTable.table td:FIRST-CHILD  {
+	white-space: nowrap;
+}
+
+table#utskickTable th:FIRST-CHILD + th {
+	width: 25%;
 }
 
 /* Utskickshantering */
 
-
+/*
 .table td, .table th {
     min-width: 20px;
     width: 20px;
@@ -94,3 +95,4 @@ table#utskickTable.table th  {
 table#utskickTable td + td {
 	width: 30px;
 }
+*/

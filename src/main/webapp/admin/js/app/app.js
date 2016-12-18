@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fuexitpollApp', [ 'ngRoute', 'ui.bootstrap', 'chart.js' ])
+angular.module('fuexitpollApp', [ 'ngRoute', 'ui.bootstrap', 'chart.js' ]) // , 'ui.tinymce'
     // Stäng av caching för get requests globalt
     .config(['$httpProvider', '$routeProvider', function($httpProvider, $routeProvider) {
     	//initialize get if not there
@@ -23,6 +23,12 @@ angular.module('fuexitpollApp', [ 'ngRoute', 'ui.bootstrap', 'chart.js' ])
 //          .when('/detaljer/:jobbId', {
 //            templateUrl: 'views/jobbdetaljerView.html'
 //          });
+            .when('/respondenter', {
+		      templateUrl: 'js/app/views/respondenter.html'
+		    })
+		    .when('/kodschema', {
+		      templateUrl: 'js/app/views/kodschema.html'
+		    })
 		    .when('/utskickshantering', {
 		      templateUrl: 'js/app/views/scheduler.html'
 		    });
